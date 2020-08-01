@@ -1,0 +1,759 @@
+
+/* Fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Anton);
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+
+/* Logo Hex Colors
+
+green hex: #419a1c
+blue hex: #1761a0 */
+
+/* main css */
+
+html{
+  background-image: linear-gradient(to top left, white, white);
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Header Styling */
+
+header{
+  background-color: ;
+  /* box-shadow: 5px 0px 5px grey; */
+  font-family: Lato;
+  height: auto;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  position: fixed;
+  top: 0px;
+  text-align: center;
+  transition: .3s;
+  width: 100%;
+  z-index: 3;
+}
+
+.headerDiv{
+  display: flex;
+  margin: 0px 45px;
+}
+
+.headerFlex{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 78px;
+  justify-content: flex-end;
+  width: 100%;
+  z-index: 2;
+}
+
+.flexItemParent{
+  text-decoration: none;
+  height: auto;
+  margin: 0px 15px;
+  width: auto;
+}
+
+.headerFlexItem{
+  color: #001500;
+  height: 100%;
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 17px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: auto;
+}
+
+#logoImage{
+}
+
+.sticky{
+  background-color: white;
+  box-shadow: 5px 0px 5px grey;
+  opacity: .9;
+  position: fixed;
+  top: 0;
+  transition: .5s;
+  width: 100%;
+}
+
+/* .currentPage{
+  border-bottom-style: solid;
+  border-bottom-color: blue;
+  border-bottom-width: thin;
+} */
+
+/* Fixed Side Nav Styling */
+
+.sideNavFlex{
+  display: flex;
+  flex-flow: column;
+  position: fixed;
+  left: 90%;
+  top: 40%;
+  z-index: 2;
+}
+
+.sideNavParent{
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  width: 100px;
+}
+
+.sideNavCircle{
+  border-color: black;
+  border-radius: 50%;
+  border-style: solid;
+  background-color: none;
+  height: 10px;
+  margin-left: 3px;
+  margin-top: 7px;
+  width: 10px;
+}
+
+#sideNavCircleTop{
+  transition: .3s;
+}
+
+#sideNavCircleMid{
+  transition: .3s;
+}
+
+#sideNavCircleBot{
+  transition: .3s;
+}
+
+.sideNavText{
+  display: none;
+  font-family: Montserrat;
+  letter-spacing: 2px;
+  transition: .3s;
+}
+
+#sideNavTextTop{
+
+}
+
+#sideNavTextMid{
+
+}
+
+#sideNavTextBot{
+
+}
+
+/* Fixed Side Nave HOVER Styling */
+
+.sideNavCircle:hover{
+  border-color: white;
+  background-color: black;
+}
+
+/* Media Query for Side Nav */
+
+@media screen and (max-width: 1000px) {
+  .sideNavFlex{
+    left: 89%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .sideNavFlex{
+    left: 88.5%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .sideNavFlex{
+    left: 88%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .sideNavFlex{
+    left: 87.5%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .sideNavFlex{
+    left: 87%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .sideNavFlex{
+    left: 86%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sideNavFlex{
+    left: 85%;
+  }
+}
+
+/* Mission Statement Styling */
+
+.statementImage{
+  background-image: url("../images/mockup.png");
+  background-position: 400px 100px;
+  background-repeat: no-repeat;
+  background-size: 800px;
+  color: #419a1c;
+  font-family: Montserrat;
+  height: 600px;
+  position: relative;
+  top: -18px;
+  width: 100%;
+  text-align: center;
+}
+
+.statementHolder{
+  color: #1761a0;
+  display: flex;
+  font-family: Ubuntu;
+  padding: 15px 0px;
+  position: relative;
+  text-align: center;
+  top: -400px;
+  width: 100%;
+}
+
+.statementParent{
+  align-self: center;
+  padding-left: 45px;
+  width: 50%;
+}
+
+.statement{
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 7px;
+  margin: 5px 0px;
+  text-transform: uppercase;
+  width: auto;
+  z-index: 1;
+}
+
+.subStatement{
+  color: black;
+  font-size: 20px;
+  letter-spacing: 5px;
+  z-index: 1;
+}
+
+/* Main Flex Box */
+
+.mainInfoContainer{
+  background-color:;
+  color: #1761a0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-family: Montserrat;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:;
+  position: relative;
+  text-align: center;
+  top: -150px;
+  width: 90%;
+}
+
+.mainInfoParent{
+  color: #1761a0;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: 95%;
+  padding: 10px;
+  margin: 10px;
+}
+
+#mainInfoImageChildHow{
+  background-image: url('../images/graph.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 50%;
+}
+
+#mainInfoImageChildWho{
+  background-image: url('../images/app_placeholder.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 50%;
+}
+
+#mainInfoImageChildWhy{
+  background-image: url('../images/people_pondering.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 50%;
+}
+
+#mainInfoImageChildGoals{
+  background-image: url('../images/graph.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 50%;
+}
+
+.mainInfoChild{
+  height: auto;
+  margin: 20px;
+  width: 50%;
+}
+
+.mainInfoTitle{
+  font-family: Ubuntu;
+  letter-spacing: 5px;
+}
+
+.mainInfo{
+  border:;
+  color: #333333;
+  font-family: Montserrat;
+}
+
+/* Image CSS */
+
+#logoImage{
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 75px;
+  width: auto;
+}
+
+.appPreview{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hover Styling for MAIN HTML */
+
+.headerFlexItem:hover{
+  color: #1761a0;
+  text-shadow: 2px 2px 6px #1761a0;
+}
+
+header:hover{}
+
+
+
+/* Styling for ABOUT HTML */
+
+.personalImagesFlex{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.personalImages{
+  background-size: contain;
+  height: 250px;
+  padding: 25px;
+  left: 1%;
+  position: relative;
+  text-align: right;
+  width: 250px;
+  vertical-align: middle;
+  z-index:;
+}
+
+#bryceImage{
+  background-image: url('../images/chadswop.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  margin: 25px;
+  width: 200px;
+}
+
+#romanImage{
+  background-image: url('../images/jermichael.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  margin: 25px;
+  width: 200px;
+}
+
+#jaredImage{
+  background-image: url('../images/beloop.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  margin: 25px;
+  width: 200px;
+}
+
+#rossImage{
+  background-image: url('../images/triptrip.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  margin: 25px;
+  width: 200px;
+}
+
+.imgFlex{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.clickToMeet{
+  cursor: pointer;
+  display: inline;
+  font-family: Montserrat;
+  font-size: 18px;
+  height: auto;
+  letter-spacing: 5px;
+  width: auto;
+  word-spacing: 4px;
+}
+
+div hr{
+  color: black;
+  margin: 1px;
+}
+
+/* ABOUT Hidden Text Styling */
+
+.hiddenText{
+  display: none;
+  font-family: Montserrat;
+  width: 60%;
+}
+
+.hiddenTextSub{
+  color: grey;
+}
+
+#hiddenBryceText{
+  position: absolute;
+  margin-left: 50px;
+  top: 150px;
+}
+
+#hiddenRomanText{
+  position: absolute;
+  margin-left: 50px;
+  top: 450px;
+}
+
+#hiddenJaredText{
+  position: absolute;
+  margin-left: 50px;
+  top: 750px;
+}
+
+#hiddenRossText{
+  position: absolute;
+  margin-left: 50px;
+  top: 1050px;
+}
+
+/* ABOUT Hidden Text GO BACK Styling */
+
+.goBack{
+  cursor: pointer;
+  font-size: 16px;
+  transition: .3s;
+}
+
+/* ABOUT Hidden Text GO BACK HOVER Styling */
+
+.goBack:hover{
+  color: #1761a0;
+  letter-spacing: 1px;
+  transition: .3s;
+}
+
+#goBackBryce:hover{
+  color: orange;
+}
+
+#goBackRoman:hover{
+  color: yellow;
+}
+
+#goBackJared:hover{
+  color: lightgreen;
+}
+
+#goBackRoss:hover{
+  color: red;
+}
+
+
+/* Hover styling for ABOUT HTML */
+
+.clickToMeet:hover{
+  color: #1761a0;
+}
+
+.bryce:hover{
+  color: orange;
+  transition: .3s;
+}
+
+.roman:hover{
+  color: yellow;
+  transition: .3s;
+}
+
+.jared:hover{
+  color: lightgreen;
+  transition: .3s;
+}
+
+.ross:hover{
+  color: red;
+  transition: .3s;
+}
+
+
+/* Styling for CONTACT HTML */
+
+.seattleImage{
+  text-align: center;
+  background-clip: padding-box;
+  background-image: url("../images/seattle_bay.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -18px;
+  width: 100%;
+  height: 600px;
+}
+
+.seattleText{
+  border-bottom-style: solid;
+  border-right-style: solid;
+  display: none;
+  font-family: Ubuntu;
+  font-weight:lighter;
+  height: 50px;
+  left: 10%;
+  letter-spacing: 3px;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  text-transform: uppercase;
+  top: 33%;
+  width: 250px;
+  z-index: 0;
+}
+
+.formHeading{
+  font-family: Ubuntu;
+  letter-spacing: 7px;
+  margin-bottom:25px;
+  margin-top: 50px;
+}
+
+.formContainer{
+  background-color:;
+  border-radius: 4px;
+  font-family: Montserrat;
+  margin: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  width: 75%;
+}
+
+.contactForm{
+  display: flex;
+  flex-flow: column;
+}
+
+label{
+  font-family: Montserrat;
+}
+
+input{
+  border: none;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  font-size: 15px;
+  margin: 5px 5px;
+  padding: 10px;
+}
+
+input:focus, textarea, text{
+  outline: none !important;
+}
+
+.names{
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+}
+
+input[type=text]{
+  margin: 5px;
+  width: 50%;
+}
+
+textarea{
+  border: none;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  font-size: 15px;
+  margin: 5px 5px;
+  padding: 10px;
+}
+
+input[type=submit] {
+  background-color: black;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: 3px;
+  margin-top: 25px;
+  text-transform: uppercase;
+  transition: .2s;
+  width: 20%;
+}
+
+/* Hover styling for CONTACT HTML */
+
+.seattleImage:hover{
+
+}
+
+input[type=submit]:hover{
+  box-shadow: 0px 0px 5px lightgrey;
+  color: #1761a0;
+}
+
+/* Footer Styling */
+
+.foota{
+  background-color: #2e3b38;
+  color: white;
+  margin-bottom: ;
+  margin-top: 50px;
+  padding: 1% 0px 1%;
+}
+
+.disclaimer{
+  color: grey;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: lighter;
+  margin: 0px;
+}
+
+.toTop{
+  color: black;
+  letter-spacing: 3px;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+
+#copyright{
+  margin: 0px;
+  text-shadow: 0px 0px 0px white;
+}
+
+.footerFlex{
+  align-items: center;
+  display: flex;
+  padding: 25px 0px;
+  justify-content: center;
+}
+
+.footerFlexItem{
+  align-self: flex-start;
+  font-family: Montserrat;
+  margin: ;
+  width: 33%;
+}
+
+footer h2{
+  font-family: Ubuntu;
+  font-size: 17px;
+  margin: 0px;
+  text-transform: uppercase;
+}
+
+footer div p{
+  font-family: Montserrat;
+  font-size: 13px;
+}
+
+.googlePlayBadge{
+  height: auto;
+  width: 200px;
+}
+
+.fa{
+  margin: 25px 10px;
+  text-decoration: none;
+}
+
+.fa-app-store{
+  color: black;
+}
+
+.fa-google-play{
+  color: black;
+}
+
+.fa-instagram{
+  color: white;
+}
+
+.fa-linkedin{
+  color: white;
+}
+
+/* FOOTER Hover Styling */
+
+.fa:hover{
+  text-shadow: 0px 0px 5px white;
+}
+
+.toTop:hover{
+  border-left: solid;
+  border-right: solid;
+  border-width: thin;
+  color: #1761a0;
+  letter-spacing: 4px;
+  transition: .1s;
+}
+
+
+/* Logo Hex Colors
+
+green hex: #419a1c
+blue hex: #1761a0 */

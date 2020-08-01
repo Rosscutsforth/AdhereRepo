@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a6770ea5bf.js" crossorigin="anonymous"></script>
+  <title>Contact Us</title>
+</head>
+
+<body>
+  <header id="header">
+
+    <div class="headerDiv">
+
+      <div class="">
+        <img src="Images/Logo.png" alt="Logo" class="" id="logoImage">
+      </div>
+
+      <div class="headerFlex">
+
+        <div class="flexItemParent">
+          <a href="main.html" class="headerFlexItem" id="main">main</a>
+        </div>
+
+        <div class="flexItemParent">
+          <a href="about.html" class="headerFlexItem" id="about">about</a>
+        </div>
+
+        <div class="flexItemParent">
+          <a href="contact.html" class="headerFlexItem" id="contact">contact</a>
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+  <div class="seattleImage">
+    <h1 class="seattleText">Seattle, WA</h1>
+
+  </div>
+
+  <!-- Contact Form Styling -->
+
+  <h1 align="center" class="formHeading">Contact Us</h1>
+
+  <div class="formContainer">
+    <form class="contactForm" name="contactForm" action="action_page.php" method="post">
+
+      <div class="names">
+        <label form="contactForm" for="fName"></label>
+        <input form="contactForm" minlength="1" maxlength="50" required type="text"
+        id="fName" name="fName" placeholder="First Name" value="">
+
+        <label form="contactForm" for="lName"></label>
+        <input form="contactForm" minlength="1" maxlength="50" required type="text"
+        id="lName" name="lName" placeholder="Last Name" value="">
+      </div>
+
+      <label form="contactForm" for="email"></label>
+      <input form="contactForm" minlength="6" maxlength="50" required type="email"
+      id="email" name="email" placeholder="Email" value="">
+
+      <label form="contactForm" for="subjectText"></label>
+      <textarea form="contactForm" minlength="5" maxlength="2000" required name="subjectText"
+      id="subjectText" placeholder="Tell us what we can help you with!" rows="1" cols="100"></textarea>
+
+      <input form="contactForm" type="submit" name="" value="Submit">
+
+    </form>
+  </div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="javascript/script.js" charset="utf-8"></script>
+
+</body>
+
+<footer align="center" class="foota">
+
+  <div class="footerFlex">
+
+    <div class="footerFlexItem">
+      <h2 class="downloadAppText">Download the App</h2>
+
+      <img class="googlePlayBadge" src="./images/google-play-badge.png" alt="">
+
+      <!-- <img class="googlePlayBadge" src="./images/google-play-badge.png" alt=""> -->
+
+      <!-- <a href="#" class="fa fa-app-store fa-2x"></a>
+
+      <a href="#" class="fa fa-google-play fa-2x"></a> -->
+    </div>
+
+    <div class="footerFlexItem">
+      <h2>Contact</h2>
+      <p>bescobar@adherept.com</p>
+    </div>
+
+    <div class="footerFlexItem">
+      <h2>Connect With Us</h2>
+
+      <a href="#" class="fa fa-instagram fa-2x"></a>
+
+      <a href="#" class="fa fa-linkedin fa-2x"></a>
+    </div>
+  </div>
+
+  <h3 class="disclaimer"><div class="fa fa-copyright fa-xs" id="copyright"></div>
+    2020 <strong>Adhere PT</strong>. All Rights Reserved</h3>
+
+</footer>
+
+</html>
